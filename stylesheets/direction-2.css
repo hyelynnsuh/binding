@@ -2,3 +2,94 @@
 	background-color: rgb(213, 213, 213);
 }
 
+/* GRID BACKGROUND */
+.graph-paper {
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(213, 213, 213);
+	background-image: 
+		linear-gradient(to right, rgba(0, 0, 0, 0.165) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.165) 1px, transparent 1px);
+	background-size: 2rem 2rem;
+}
+
+p, a {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* NAV */
+.nav-container {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 0.2rem;
+	background-color: rgb(213, 213, 213);
+}
+
+.nav-item {
+	border: solid black 1px;
+	padding: 0.5rem;
+	text-align: center;
+	border-radius: 3rem;
+
+}
+
+.nav-item:nth-child(3) {
+	background-color: black;
+	color: white;
+}
+
+/* TITLE */
+h1, h2 {
+	font-family: "Syncopate", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3.5rem;
+}
+
+h2 {
+	text-align: right;
+	grid-area: h2;
+}
+
+.h1-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 0.1rem;
+	align-items: center;
+	grid-template-areas: 
+		"p h1"
+		"p h2";
+}
+
+.h1-item {
+	justify-content: center;
+}
+
+.article-number {
+	border: solid white 1px;
+	border-radius: 7rem;
+	text-align: center;
+	padding: 0.5rem;
+	max-width: 3rem;
+	align-items: top;
+	background-color: rgb(213, 213, 213);
+}
+
+address {
+	text-align: center;
+	margin-bottom: 1.8rem;
+}
+
+/* TABLE OF CONTENTS */
+aside {
+	border: solid black 1px;
+	border-radius: 3rem;
+	font-family:"Syncopate", sans-serif;
+	padding: 1rem;
+	margin-bottom: 1.2rem;
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 1.9rem;
+	background-color: rgb(213, 213, 213);
+	max-width: 23rem;
+}

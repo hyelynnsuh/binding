@@ -17,3 +17,7 @@ main > p {
 body {
 	font-size: var(--root-size);
 }
+
+.h1-container {
+	margin-top: 1.8rem;
+}
