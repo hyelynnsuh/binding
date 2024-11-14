@@ -29,6 +29,23 @@ h1 {
 	font-size: 3.5rem;
 }
 
+.h1-container {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 0.1rem;
+	align-items: center;
+}
 
+.h1-item {
+	justify-content: center;
+}
+
+.article-number {
+	border: solid white 1px;
+	border-radius: 7rem;
+	text-align: center;
+	padding: 0.5rem;
+	max-width: 3rem;
+}
 
 /* BODY */
