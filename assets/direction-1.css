@@ -22,18 +22,26 @@ p {
 }
 
 /* TITLE */
-h1 {
+h1, h2 {
 	font-family: "Rubik 80s Fade", system-ui;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 3.5rem;
 }
 
+h2 {
+	text-align: right;
+	grid-area: h2;
+}
+
 .h1-container {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: 1fr 2fr;
 	gap: 0.1rem;
 	align-items: center;
+	grid-template-areas: 
+		"p h1"
+		"p h2";
 }
 
 .h1-item {
@@ -46,6 +54,10 @@ h1 {
 	text-align: center;
 	padding: 0.5rem;
 	max-width: 3rem;
+	align-items: top;
 }
 
+address {
+	text-align: center;
+}
 /* BODY */
