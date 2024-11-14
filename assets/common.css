@@ -9,9 +9,9 @@
 	margin-top: 0.2rem;
 }
 
-p:not(.h1-item) {
-	margin-bottom: 1.2rem;
-	line-height: 1.4rem;
+main > p {
+	margin-bottom: 1.8rem;
+	line-height: 1.8rem;
 }
 
 body {
