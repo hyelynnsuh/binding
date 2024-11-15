@@ -4,7 +4,8 @@
 	font-family: "Inclusive Sans", sans-serif;
 }
 
-p:not(.article-number), a, blockquote {
+
+p:not(.article-number), blockquote {
 	line-height: 1.8rem;
 	margin-bottom: 1.8rem;
 	max-width: 50rem;
@@ -12,29 +13,30 @@ p:not(.article-number), a, blockquote {
 
 
 /* NAV */
-/* .nav-container {
-	background-color: white;
+.nav-container {
 	overflow: hidden;
+	display: flex;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 4rem;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav-item {
+	background-color: rgb(240, 245, 255);
 	justify-content: center;
-	align-items: center;
-	border: solid white 1px;
+	border: solid rgb(0, 18, 158) 0.1rem;
 	padding: 1.5rem;
 	text-align: center;
 	font-size: 1.5rem;
 }
 
 .nav-item:nth-child(4) {
-	background-color: black;
-	color: rgb(213, 213, 213);
-} */
+	background-color: rgb(0, 18, 158);
+	color: rgb(240, 245, 255);
+}
+
 
 
 /* TITLE */
@@ -52,7 +54,7 @@ h1 {
 		"p h1"
 		"p h1";
 	border: solid rgb(0, 18, 158);
-	margin-top: 1.5rem;
+	margin-top: 0.7rem;
 }
 
 div > p {
@@ -84,4 +86,15 @@ blockquote {
 	padding: 1.5rem;
 	margin-bottom: 1.8rem;
 	border-radius: 1.5rem;
+	border: solid rgb(0, 18, 158) 0.1rem;
+}
+
+/* FOOTER */
+footer {
+	margin-bottom: 5.5rem;
+	background-color: rgb(0, 18, 158);
+	color: rgb(240, 245, 255);
+	padding: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
