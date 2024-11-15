@@ -1,3 +1,83 @@
-p {
-	color: brown;
+:root {
+	background-color: rgb(240, 245, 255);
+	color: rgb(0, 18, 158);
+	font-family: "Inclusive Sans", sans-serif;
+}
+
+p:not(.article-number), a, blockquote {
+	line-height: 1.8rem;
+	margin-bottom: 1.8rem;
+	max-width: 50rem;
+}
+
+
+/* NAV */
+/* .nav-container {
+	background-color: white;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	justify-content: space-around;
+}
+
+.nav-item {
+	justify-content: center;
+	align-items: center;
+	border: solid white 1px;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.nav-item:nth-child(4) {
+	background-color: black;
+	color: rgb(213, 213, 213);
+} */
+
+
+/* TITLE */
+h1 {
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+
+.h1-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 0.1rem;
+	align-items: center;
+	grid-template-areas: 
+		"p h1"
+		"p h1";
+	border: solid rgb(0, 18, 158);
+	margin-top: 1.5rem;
+}
+
+div > p {
+	border-right: solid rgb(0, 18, 158);
+}
+
+.article-number {
+	text-align: center;
+	padding: 0.5rem;
+	font-size: 7rem;
+	align-items: start;
+	color: rgb(0, 18, 158);
+}
+
+address {
+	text-align: center;
+	margin-bottom: 1.8rem;
+	margin-top: 0.5rem;
+	border: solid rgb(0, 18, 158);
+	padding: 1.5rem;
+}
+
+/* BLOCKQUOTES */
+blockquote {
+	max-width: 20rem;
+	margin: auto;
+	text-align: center;
 }
