@@ -173,4 +173,21 @@ footer {
 	background-color: rgba(255, 255, 71, 0.77);
 	padding-top: 1.5rem;
 	padding-bottom: 1rem;
+	position: bottom;
 }
+
+/* INDEX.HTML GRID */
+/* .grid-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10rem;
+	margin-bottom: 8rem;
+	rotate: -90deg;
+	gap: 1rem;
+}
+
+ .grid-item{
+	font-size: 2rem;
+	border: solid black 1px;
+	padding: 1rem;
+} */
