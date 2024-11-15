@@ -13,7 +13,7 @@
 /* NAV */
 a{
 	text-decoration: none;
-	font-family: ;
+	font-family: "Manrope", sans-serif;
 }
 
 ul{
@@ -122,6 +122,19 @@ h1 {
 	/* border-bottom: solid var(--black) 1px; */
 	width: 20rem;
 	margin: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+address {
+	text-align: center;
+	border-bottom: solid var(--black) 1px;
+	margin-bottom: 1.3rem;
+}
+
+span {
+	background-color: rgba(255, 255, 71, 0.77);
+
 }
 
 /* BODY */
@@ -131,4 +144,33 @@ body:has(.side-menu:checked) {
 
 body{
 	background-color: var(--white);
+	font-family: "Manrope", sans-serif;
+}
+
+p {
+	line-height: 1.8rem;
+	margin-bottom: 1.8rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+/* BLOCKQUOTE */
+blockquote {
+	text-align: center;
+	font-family: "Megrim", system-ui;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+q {
+	background-color: rgba(255, 255, 71, 0.77);
+	padding: 0.2rem;
+	line-height: 3rem;
+}
+
+/* FOOTER */
+footer {
+	background-color: rgba(255, 255, 71, 0.77);
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
 }
