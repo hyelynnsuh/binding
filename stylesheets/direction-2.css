@@ -13,16 +13,18 @@
 	background-size: 2rem 2rem;
 }
 
-p, a {
+p:not(.article-number), a, blockquote {
 	font-family: "Montserrat", sans-serif;
+	line-height: 1.8rem;
+	margin-bottom: 1.8rem;
 }
+
 
 /* NAV */
 .nav-container {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	gap: 0.2rem;
-	background-color: rgb(213, 213, 213);
 }
 
 .nav-item {
@@ -30,12 +32,19 @@ p, a {
 	padding: 0.5rem;
 	text-align: center;
 	border-radius: 3rem;
-
+	background-color: rgb(213, 213, 213);
+	font-size: 0.9rem;
 }
 
 .nav-item:nth-child(3) {
 	background-color: black;
-	color: white;
+	color: rgb(213, 213, 213);
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
 
 /* TITLE */
@@ -66,13 +75,15 @@ h2 {
 }
 
 .article-number {
-	border: solid white 1px;
+	border: solid black 1px;
 	border-radius: 7rem;
 	text-align: center;
 	padding: 0.5rem;
 	max-width: 3rem;
-	align-items: top;
-	background-color: rgb(213, 213, 213);
+	align-items: start;
+	color: rgb(213, 213, 213);
+	background-color: black;
+	font-family: "Montserrat", sans-serif;
 }
 
 address {
@@ -81,15 +92,59 @@ address {
 }
 
 /* TABLE OF CONTENTS */
-aside {
-	border: solid black 1px;
-	border-radius: 3rem;
+details {
 	font-family:"Syncopate", sans-serif;
 	padding: 1rem;
-	margin-bottom: 1.2rem;
 	font-weight: 500;
-	font-size: 1.8rem;
-	line-height: 1.9rem;
-	background-color: rgb(213, 213, 213);
+	font-size: 1.3rem;
+	line-height: 2.1rem;
+	text-align: left;
 	max-width: 23rem;
+	margin: auto;
+	margin-bottom: 1.5rem;
+	background-color: rgb(213, 213, 213);
+	border: solid black 1px;
+	border-radius: 3rem;
+}
+
+summary {
+	text-align: center;
+	font-weight: 500;
+	list-style-type: "+";
+	list-style-position: outside;
+	margin-left: 1.5rem;
+	/* border-bottom: solid 1px rgb(213, 213, 213);
+	margin-bottom: 1rem; */
+}
+
+details[open] > summary {
+	list-style-type: "-";
+	list-style-position: open;
+
+}
+
+aside > details[open] {
+	background-color: black;
+	color: rgb(213, 213, 213);
+}
+
+a:not(nav) {
+	font-family:"Syncopate", sans-serif;
+	font-weight: 500;
+}
+
+/* H3's */
+h3 {
+	font-family: "Syncopate", sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	padding: 1rem;
+	line-height: 2.1rem;
+	margin: auto;
+	background-color: black;
+	border: solid black 1px;
+	color: rgb(213, 213, 213);
+	border-radius: 3rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
 }
