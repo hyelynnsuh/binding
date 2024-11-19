@@ -252,3 +252,74 @@ footer > aside, q {
 		linear-gradient(to bottom, var(--gray) 1px, transparent 1px);
 	background-size: 2.5rem 2.2rem;
 }
+
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 1280px) {
+
+	/*TITLES*/
+	.parent-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 80rem;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	}
+	
+	h1{
+		font-size: 6rem;
+		line-height: 10rem;
+	}
+
+	.article-number {
+		font-size: 10rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+
+	.h1-container {
+		flex: 0 0 auto;
+		width: 60%;
+	}
+
+	address {
+		max-width: 20rem;
+		margin: 0;
+		font-size: 2rem;
+		padding: 2.5rem;
+	}
+
+	address:nth-child(2) {
+		width: 21rem;
+	}
+
+	.address-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 30%;
+		justify-content: space-between;
+		margin-top: 1.5rem;
+		align-items: center;
+	}
+
+	.top-right, .bottom-right {
+		flex: 1;
+	}
+
+	/* BODY TEXT */
+	main {
+		max-width: 45rem;
+		margin-left: 3rem;
+		margin: auto;
+		font-size: 1.5rem;
+	}
+
+	main > p {
+		line-height: 2.5rem;
+	}
+
+}
