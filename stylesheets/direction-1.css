@@ -470,7 +470,10 @@ footer > p {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;
-		background: var(--blue);
+		background: var(--white);
+		max-width: 50rem;
+		margin: auto;
+		margin-bottom: 1.8rem;
 	}
 
 	:where(.first, .second, .third) {
@@ -510,6 +513,10 @@ footer > p {
 		display: block;
 	}
 
+	.first, .second, .third {
+		border: solid 1px var(--blue);
+		padding: 1.5rem;
+	}
 
 	/*ARTICLE HEADING TITLE*/
 	.parent-container {
