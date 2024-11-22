@@ -380,6 +380,7 @@ h4:nth-child(3) {
 
 	.top-right, .bottom-right {
 		flex: 1;
+		width: 100%;
 	}
 
 }
