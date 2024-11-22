@@ -58,8 +58,15 @@ h3 {
 }
 
 
-/* FOOTER */
+main {
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
 
+/* FOOTER */
+footer {
+	padding-left: 1.5rem;
+}
 
 
 /* TABLET BREAKPOINT */

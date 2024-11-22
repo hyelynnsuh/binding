@@ -15,6 +15,11 @@ footer > aside, q {
 	line-height: 1.8rem;
 }
 
+main {
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
+
 
 /* TABLET BREAKPOINT */
 @media (min-width: 800px) {
