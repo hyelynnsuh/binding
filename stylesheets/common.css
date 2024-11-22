@@ -474,6 +474,7 @@ footer > p {
 		padding: 1.5rem;
 		border-radius: 1.5rem;
 		border: solid rgb(0, 18, 158) 0.1rem;
+		margin-bottom: 1.5rem;
 	}
 
 	blockquote > q, cite, time {
@@ -546,9 +547,10 @@ footer > p {
 		margin-right: 3rem; */
 	}
 
-	main > p, blockquote {
+	main > p, blockquote, section {
 		line-height: 2.5rem;
 		grid-column: 2;
+		margin-bottom: 2rem;
 	}
 
 }
