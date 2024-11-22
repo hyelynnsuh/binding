@@ -59,10 +59,7 @@ h3 {
 
 
 /* FOOTER */
-footer {
-	border-top-right-radius: 1.2rem;
-	border-top-left-radius: 1.2rem;
-}
+
 
 
 /* TABLET BREAKPOINT */
@@ -92,8 +89,8 @@ footer {
 	address {
 		max-width: 15rem;
 		margin: 0;
-		font-size: 1.7rem;
-		padding: 2rem;
+		font-size: 1.3rem;
+		padding: 1.5rem;
 	}
 
 	address:nth-child(2) {
@@ -119,7 +116,6 @@ footer {
 	main {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin-right: 3rem;
 	}
 	
 	main > p, blockquote, section {
@@ -128,11 +124,13 @@ footer {
 		max-width: 30rem;
 	}
 
+
+	/* TABLE OF CONTENTS */
 	details {
 		grid-column: 1;
 		position: sticky;
 		top: 3rem;
-		max-width: 30rem;
+		max-width: 20rem;
 	}
 
 	summary {
@@ -140,9 +138,11 @@ footer {
 	}
 
 
-
+	/* SECTION HEADER */
 	.header-name {
 		height: 4rem;
+		font-size: 2rem;
+		min-width: 22rem;
 	}
 
 	section > p {

@@ -463,6 +463,18 @@ footer > p {
 		flex: 1;
 	}
 
+	/* BLOCKQUOTE */
+	blockquote {
+		padding: 1.5rem;
+		border-radius: 1.5rem;
+		border: solid rgb(0, 18, 158) 0.1rem;
+	}
+
+	blockquote > q, cite, time {
+		color: var(--white);
+		font-weight: 300;
+	}
+
 }
 
 

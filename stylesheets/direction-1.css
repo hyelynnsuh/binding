@@ -203,7 +203,7 @@ h4:nth-child(3) {
 		transition: 500ms;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 1rem;
+		gap: 0.5rem;
 		background: var(--white);
 		max-width: 40rem;
 		margin: auto;
@@ -248,7 +248,7 @@ h4:nth-child(3) {
 	}
 
 	.first, .second, .third {
-		border: solid 1px var(--blue);
+		border: solid 1.5px var(--blue);
 		padding: 1.5rem;
 	}
 
@@ -257,6 +257,22 @@ h4:nth-child(3) {
 		font-size: 1.5rem;
 	}
 
+	main > p {
+		max-width: 40rem;
+		margin: auto;
+		margin-bottom: 1.5rem;
+	}
+
+	/* BLOCKQUOTE */
+	blockquote {
+		margin: auto;
+		max-width: 40rem;
+		margin-bottom: 1.5rem;
+	}
+
+	blockquote > q, cite, time {
+		font-size: 2rem;
+	}
 
 }
 
