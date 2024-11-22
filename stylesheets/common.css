@@ -277,8 +277,8 @@ body{
 p {
 	line-height: 1.8rem;
 	margin-bottom: 1.8rem;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	/* margin-left: 1.5rem;
+	margin-right: 1.5rem; */
 }
 
 /* BLOCKQUOTE */
