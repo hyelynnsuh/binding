@@ -279,7 +279,7 @@ h4:nth-child(3) {
 	#grid {
 		height: 12rem;
 		gap: 5rem;
-		max-width: 80rem;
+		max-width: 60rem;
 	}
 
 	.first, .second, .third {
@@ -297,9 +297,9 @@ h4:nth-child(3) {
 		margin-left: 3rem;
 		margin: auto;
 		font-size: 1.5rem;
-		display: grid;
+		/* display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin-right: 3rem;
+		margin-right: 3rem; */
 	}
 
 	main > p, blockquote {
