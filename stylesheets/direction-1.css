@@ -135,27 +135,70 @@ h4:nth-child(3) {
 @media (min-width: 800px) {
 	/* ARTICLE TITLE */
 	h1{
-		font-size: 4rem;
+		font-size: 4.5rem;
 		line-height: 5rem;
 	}
 
 	.h1-container {
 		margin-right: 1rem;
+		flex: 0 0 auto;
+		width: 60%;
+		height: 18.5rem;
+
 	}
 	
 	.parent-container {
-		max-width: 60rem;
+		max-width: 80rem;
+
 	}
 
 	.article-number {
-		font-size: 10rem;
+		font-size: 8rem;
+		padding: 1.5rem;
 	}
-}
 
+	address {
+		max-width: 15rem;
+		margin: 0;
+		font-size: 1.7rem;
+		padding: 2rem;
+	}
 
-/* DESKTOP BREAKPOINT */
-@media (min-width: 1280px) {
-	
+	address:nth-child(2) {
+		width: 16rem;
+		margin: 0;
+	}
+
+	.address-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 30%;
+		justify-content: space-between;
+		margin-top: 1.5rem;
+		align-items: center;
+	}
+
+	.top-right, .bottom-right {
+		flex: 1;
+	}
+
+	/* .address-container {
+		max-width: 20rem;
+	} */
+
+	/* LANDING PAGE TITLE */
+	.landing-container {
+		max-width: 40rem;
+		margin: auto;
+		margin-top: 3rem;
+		margin-bottom: 1.9rem;
+	}
+
+	h3 {
+		font-size: 5rem;
+	}
+
 	/* LANDING PAGE TITLES */
 	#grid {
 		height: 10rem;
@@ -164,7 +207,7 @@ h4:nth-child(3) {
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;
 		background: var(--white);
-		max-width: 50rem;
+		max-width: 40rem;
 		margin: auto;
 		margin-bottom: 1.8rem;
 	}
@@ -211,6 +254,45 @@ h4:nth-child(3) {
 		padding: 1.5rem;
 	}
 
+	a {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+
+}
+
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 1280px) {
+	
+	/* LANDING PAGE */
+	.landing-container {
+		max-width: 60rem;
+		margin-top: 3rem;
+		margin-bottom: 1.9rem;
+	}
+
+	h3 {
+		font-size: 7rem;
+	}
+
+	/* LANDING PAGE ARTICLES */
+	#grid {
+		height: 12rem;
+		gap: 5rem;
+		max-width: 80rem;
+	}
+
+	.first, .second, .third {
+		padding: 1.5rem;
+	}
+
+	h4 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
 	
 	/* BODY TEXT */
 	main {
@@ -248,6 +330,7 @@ h4:nth-child(3) {
 		margin-right: 1rem;
 		flex: 0 0 auto;
 		width: 60%;
+		height: 24rem;
 	}
 	
 	.parent-container {
