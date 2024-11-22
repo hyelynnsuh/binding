@@ -4,6 +4,7 @@ h1 {
 	font-size: 2.5rem;
 }
 
+
 /* TABLE OF CONTENTS */
 details {
 	padding: 1rem;
@@ -15,7 +16,7 @@ details {
 	margin: auto;
 	margin-bottom: 1.5rem;
 	background-color: var(--white);
-	border: solid var(--blue) 2px;
+	border: solid var(--blue) 1.5px;
 	border-radius: 1rem;
 }
 
@@ -41,6 +42,7 @@ aside > details[open] {
 }
 
 
+
 /* SECTION TITLES */
 h3 {
 	font-size: 1.3rem;
@@ -60,6 +62,89 @@ h3 {
 footer {
 	border-top-right-radius: 1.2rem;
 	border-top-left-radius: 1.2rem;
+}
+
+
+/* TABLET BREAKPOINT */
+@media (min-width: 800px) {
+	/* ARTICLE TITLE */
+	h1{
+		font-size: 4.8rem;
+		line-height: 6rem;
+	}
+
+	.h1-container {
+		margin-right: 1rem;
+		flex: 0 0 auto;
+		width: 60%;
+		height: 15rem;
+	}
+	
+	.parent-container {
+		max-width: 80rem;
+	}
+
+	.article-number {
+		font-size: 8rem;
+		padding: 1.5rem;
+	}
+
+	address {
+		max-width: 15rem;
+		margin: 0;
+		font-size: 1.7rem;
+		padding: 2rem;
+	}
+
+	address:nth-child(2) {
+		width: 16rem;
+		margin: 0;
+	}
+
+	.address-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 30%;
+		justify-content: space-between;
+		margin-top: 1.5rem;
+		align-items: center;
+	}
+
+	.top-right, .bottom-right {
+		flex: 1;
+	}
+
+	/* MAIN */
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-right: 3rem;
+	}
+	
+	main > p, blockquote, section {
+		line-height: 2.5rem;
+		grid-column: 2;
+	}
+
+	details {
+		grid-column: 1;
+		position: sticky;
+		top: 3rem;
+	}
+
+	.header-name {
+		height: 4rem;
+	}
+
+	section > p {
+		line-height: 2.5rem;
+	}
+
+	/* FOOTER */
+	footer {
+		position: bottom;
+	}
 }
 
 
@@ -96,6 +181,7 @@ footer {
 	.h1-container {
 		flex: 0 0 auto;
 		width: 60%;
+		height: 24rem;
 	}
 
 	address {
@@ -126,7 +212,6 @@ footer {
 
 	/* BODY TEXT */
 	main {
-		max-width: 45rem;
 		margin-left: 3rem;
 		margin: auto;
 		font-size: 1.5rem;
