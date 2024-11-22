@@ -131,20 +131,25 @@ h3 {
 
 	aside {
 		grid-column: 1;
-		height: 100%;
+		margin-left: 2rem;
 	}
 
 	details {
 		position: sticky;
 		top: 3rem;
-		width: 100%;
-		max-width: 23rem;
+		max-height: 90vh;
+		max-width: 19rem;
+		overflow-y: auto;
 		overflow: visible;
 		z-index: 10;
 	}
 
 	summary {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+
+	li {
+		line-height: 3rem;
 	}
 
 

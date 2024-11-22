@@ -67,6 +67,17 @@ footer > aside, q {
 	.top-right, .bottom-right {
 		flex: 1;
 	}
+
+	/* MAIN */
+	main {
+		max-width: 40rem;
+		margin: auto;
+	}
+
+	/* BLOCKQUOTE */
+	blockquote > q {
+		font-size: 1.8rem;
+	}
 }
 
 
