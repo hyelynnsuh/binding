@@ -99,6 +99,67 @@ h1 {
 	font-size: 1.5rem;
 }
 
+/* LANDING PAGE ARTICLE CONTAINER */
+#grid {
+	height: 10rem;
+	transition: 500ms;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0.5rem;
+	background: var(--white);
+	max-width: 20.5rem;
+	margin: auto;
+	margin-bottom: 7.5rem;
+}
+
+:where(.first, .second, .third) {
+	background: var(--white);
+	transition: 300ms;
+}
+
+:where(.first, .second, .third):hover {
+	background: var(--blue);
+}
+
+#grid:has(.first:hover) {
+	grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+#grid:has(.second:hover) {
+	grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+#grid:has(.third:hover) {
+	grid-template-columns: 0.5fr 0.5fr 2fr;
+}
+
+.hover-text {
+	display: none;
+	font-size: 0.9rem;
+	margin-top: 1.5rem;
+	color: var(--white);
+}
+
+:where(.first, .second, .third):hover {
+	background: var(--blue);
+	color: var(--white);
+}
+
+:where(.first:hover, .second:hover, .third:hover) .hover-text {
+	display: block;
+}
+
+.first, .second, .third {
+	border: solid 1.5px var(--blue);
+	padding: 1.5rem;
+}
+
+a {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+
 
 /* LANDING PAGE: ARTICLE CONTAINER */
 /* .article-container {
@@ -207,7 +268,6 @@ h4:nth-child(3) {
 		background: var(--white);
 		max-width: 40rem;
 		margin: auto;
-		margin-bottom: 1.8rem;
 	}
 
 	:where(.first, .second, .third) {

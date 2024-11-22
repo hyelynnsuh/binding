@@ -463,6 +463,12 @@ footer > p {
 		flex: 1;
 	}
 
+	/* MAIIN */
+	main > p, section {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
 	/* BLOCKQUOTE */
 	blockquote {
 		padding: 1.5rem;
