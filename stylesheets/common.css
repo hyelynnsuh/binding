@@ -355,12 +355,13 @@ footer > p {
 
 	.menu a {
 		color: var(--white);
-		padding: 0.5rem 1rem;
+		padding: 1rem;
 		background-color: var(--blue);
 		border-radius: 1rem;
 		border: solid var(--white) 1px;
 		transition: background-color 0.3s ease;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
+		line-height: 0.9rem;
 	}
 
 	.menu a:hover {
