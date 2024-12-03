@@ -6,6 +6,8 @@
 	--transparent-blue: rgba(0, 18, 158, 0.284);
 	--gray: #85888C;
 	font-family: "Inclusive Sans", sans-serif;
+	--line-height: 1.8rem; 
+
 }
 
 * {
@@ -21,7 +23,7 @@
 
 main > p {
 	margin-bottom: 1.8rem;
-	line-height: 1.8rem;
+	line-height: var(--line-height);
 }
 
 body {
