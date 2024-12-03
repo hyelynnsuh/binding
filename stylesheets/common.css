@@ -5,9 +5,9 @@
 	--blue: rgb(0, 18, 158);
 	--transparent-blue: rgba(0, 18, 158, 0.284);
 	--gray: #85888C;
-	font-family: "Inclusive Sans", sans-serif;
-	--line-height: 1.8rem; 
-
+	--font-family: "Inclusive Sans", sans-serif;
+	--spacing: 1.8rem; 
+	--padding-spacing: 1.5rem;
 }
 
 * {
@@ -18,12 +18,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	color: var(--blue);
+	font-family: var(--font-family);
 }
 
 
 main > p {
-	margin-bottom: 1.8rem;
-	line-height: var(--line-height);
+	margin-bottom: var(--spacing);
+	line-height: var(--spacing);
 }
 
 body {
@@ -62,7 +63,7 @@ ul{
 .hamb {
 	cursor: pointer;
 	float: right;
-	padding: 1.5rem;
+	padding: var(--padding-spacing);
 	margin-right: 0.2rem;
 }
 
@@ -122,36 +123,36 @@ ul{
 	top: 0;
 	width: 100%;
 	z-index: 10;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	margin-bottom: 1.5rem;
+	padding-top: var(--padding-spacing);
+	padding-bottom: var(--padding-spacing);
+	margin-bottom: var(--padding-spacing);
 }
 
 
 /* LOGO */
 .logo {
 	display: inline-block;
-	margin-left: 2rem;
+	margin-left: calc(var(--spacing) + 0.2rem);
 	margin-top: 0.5rem;
 }
 
 .logo-container {
-	width: 1.2rem;
-	height: 1.2rem;
+	width: var(--root-size);
+	height: var(--root-size);
 	perspective: 50rem;
 }
 
 .logo-cube {
 	position: relative;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: var(--root-size);
+	height: var(--root-size);
 	transform-style: preserve-3d;
 	transform: rotate3d(1, 1, 0, 45deg);
 }
 
 .side {
-	width: 1.2rem;
-	height: 1.2rem;
+	width: var(--root-size);
+	height: var(--root-size);
 	background: var(--white);
 	border: 1px solid var(--blue);
 	position: absolute;
@@ -201,8 +202,8 @@ ul{
 
 .logo-cube {
 	position: relative;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: var(--root-size);
+	height: var(--root-size);
 	transform-style: preserve-3d;
 	animation: turn 5s linear infinite;
 }
@@ -212,9 +213,9 @@ ul{
 h1 {
 	font-weight: 400;
 	color: var(--blue);
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	line-height: 3rem;
+	padding-left: var(--padding-spacing);
+	padding-right: var(--padding-spacing);
+	line-height: calc(var(--padding-spacing) * 2);
 	border-left: solid var(--blue) 2px;
 }
 
@@ -258,7 +259,7 @@ address {
 
 address:nth-child(2) {
 	text-decoration: underline;
-	margin-bottom: 1.8rem;
+	margin-bottom: var(--spacing);
 }
 
 address > p {
@@ -277,8 +278,8 @@ body{
 }
 
 p {
-	line-height: 1.8rem;
-	margin-bottom: 1.8rem;
+	line-height: var(--spacing);
+	margin-bottom: var(--spacing);
 	/* margin-left: 1.5rem;
 	margin-right: 1.5rem; */
 }
@@ -286,18 +287,18 @@ p {
 /* BLOCKQUOTE */
 blockquote {
 	text-align: center;
-	background: radial-gradient(var(--blue), var(--white));
-	color: rgb(240, 245, 255);
+	background: none;
+	color: var(--blue);
 	padding: 1.5rem;
 	margin-bottom: 1.8rem;
 	border-radius: 1.5rem;
-	border: solid rgb(0, 18, 158) 0.1rem;
+	border: solid var(--blue) 0.1rem;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
 
 blockquote > q, cite, time {
-	color: var(--white);
+	/* color: var(--white); */
 	font-size: 1.2rem;
 	font-weight: 300;
 }
