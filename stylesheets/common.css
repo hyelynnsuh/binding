@@ -7,7 +7,7 @@
 	--gray: #85888C;
 	--font-family: "Inclusive Sans", sans-serif;
 	--spacing: 1.8rem; 
-	--padding-spacing: 1.5rem;
+	--pad-marg-spacing: 1.5rem;
 }
 
 * {
@@ -63,7 +63,7 @@ ul{
 .hamb {
 	cursor: pointer;
 	float: right;
-	padding: var(--padding-spacing);
+	padding: var(--pad-marg-spacing);
 	margin-right: 0.2rem;
 }
 
@@ -123,9 +123,9 @@ ul{
 	top: 0;
 	width: 100%;
 	z-index: 10;
-	padding-top: var(--padding-spacing);
-	padding-bottom: var(--padding-spacing);
-	margin-bottom: var(--padding-spacing);
+	padding-top: var(--pad-marg-spacing);
+	padding-bottom: var(--pad-marg-spacing);
+	margin-bottom: var(--pad-marg-spacing);
 }
 
 .sticky-header {
@@ -218,9 +218,9 @@ ul{
 h1 {
 	font-weight: 400;
 	color: var(--blue);
-	padding-left: var(--padding-spacing);
-	padding-right: var(--padding-spacing);
-	line-height: calc(var(--padding-spacing) * 2);
+	padding-left: var(--pad-marg-spacing);
+	padding-right: var(--pad-marg-spacing);
+	line-height: calc(var(--pad-marg-spacing) * 2);
 	border-left: solid var(--blue) 2px;
 }
 
@@ -233,14 +233,14 @@ h1 {
 		"p h1"
 		"p h1";
 	border: solid var(--blue);
-	margin-top: 1.5rem;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	margin-top: var(--pad-marg-spacing);
+	margin-left: var(--pad-marg-spacing);
+	margin-right: var(--pad-marg-spacing);
 }
 
 h1, h2 {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: var(--pad-marg-spacing);
+	padding-bottom: var(--pad-marg-spacing);
 }
 
 .article-number {
@@ -252,13 +252,13 @@ h1, h2 {
 
 address {
 	text-align: center;
-	margin-bottom: 1rem;
+	margin-bottom: calc(var(--pad-marg-spacing) - 0.5rem);
 	border: solid var(--blue) 1.5px;
-	border-radius: 1rem;
-	padding: 1.5rem;
+	/* border-radius: 1rem; */
+	padding: var(--pad-marg-spacing);
 	max-width: 20rem;
 	margin: auto;
-	margin-top: 1rem;
+	margin-top: calc(var(--pad-marg-spacing) - 0.5rem);
 	color: var(--blue);
 }
 
@@ -294,12 +294,12 @@ blockquote {
 	text-align: center;
 	background: none;
 	color: var(--blue);
-	padding: 1.5rem;
-	margin-bottom: 1.8rem;
-	border-radius: 1.5rem;
+	padding: var(--pad-marg-spacing);
+	margin-bottom: calc(var(--pad-marg-spacing) + 0.3rem);
+	/* border-radius: 1.5rem; */
 	border: solid var(--blue) 0.1rem;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	margin-left: var(--pad-marg-spacing);
+	margin-right: var(--pad-marg-spacing);
 }
 
 blockquote > q, cite, time {
@@ -311,8 +311,8 @@ blockquote > q, cite, time {
 
 /* FOOTER */
 footer {
-	padding-top: 1.5rem;
-	padding-bottom: 1rem;
+	padding-top: var(--pad-marg-spacing);
+	padding-bottom: calc(var(--pad-marg-spacing) - 0.5rem);
 	position: bottom;
 }
 
@@ -481,13 +481,12 @@ footer > p {
 	/* BLOCKQUOTE */
 	blockquote {
 		padding: 1.5rem;
-		border-radius: 1.5rem;
 		border: solid rgb(0, 18, 158) 0.1rem;
 		margin-bottom: 1.5rem;
 	}
 
 	blockquote > q, cite, time {
-		color: var(--white);
+		color: var(--blue);
 		font-weight: 300;
 	}
 

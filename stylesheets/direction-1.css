@@ -102,7 +102,6 @@ h1 {
 /* LANDING PAGE ARTICLE CONTAINER */
 #grid {
 	height: 10rem;
-	transition: 500ms;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	gap: 0.5rem;
@@ -110,6 +109,7 @@ h1 {
 	max-width: 20.5rem;
 	margin: auto;
 	margin-bottom: 7.5rem;
+	transition: 500ms;
 }
 
 :where(.first, .second, .third) {
@@ -252,6 +252,7 @@ h4:nth-child(3) {
 		max-width: 20rem;
 	} */
 
+	
 	/* LANDING PAGE TITLE */
 	.landing-container {
 		max-width: 40rem;
@@ -263,6 +264,7 @@ h4:nth-child(3) {
 	h3 {
 		font-size: 5rem;
 	}
+
 
 	/* LANDING PAGE TITLES */
 	#grid {
