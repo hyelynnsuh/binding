@@ -42,7 +42,6 @@ aside > details[open] {
 }
 
 
-
 /* SECTION TITLES */
 h3 {
 	font-size: 1.3rem;
@@ -119,11 +118,11 @@ footer {
 	}
 
 	/* MAIN */
-	main {
+	.content-grid {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: auto;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 	}
 	
 	main > p, blockquote, section {
@@ -139,8 +138,11 @@ footer {
 	/* TABLE OF CONTENTS */
 
 	aside {
-		grid-column: 1;
+		/* grid-column: 1; */
 		margin-left: 2rem;
+		position: sticky;
+		top: 10rem;
+		
 	}
 
 	details {

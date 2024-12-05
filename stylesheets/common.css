@@ -472,9 +472,9 @@ footer > p {
 		flex: 1;
 	}
 
-	/* MAIIN */
+	/* MAIN */
 	main > p, section {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		line-height: 2rem;
 	}
 

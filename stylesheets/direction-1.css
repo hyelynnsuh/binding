@@ -159,12 +159,26 @@ a {
 	font-size: 1.5rem;
 }
 
+
 /* LANDING PAGE P */
 p {
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
 
+section > p > span {
+	border: solid 1px var(--blue);
+	padding: 0.5rem;
+}
+
+
+/* COLOPHON HEADER */
+h4 {
+	font-size: 2rem;
+	color: var(--white);
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+}
 
 
 /* LANDING PAGE: ARTICLE CONTAINER */
@@ -237,7 +251,7 @@ h4:nth-child(3) {
 	.address-container {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 2.5rem;
 		width: 30%;
 		justify-content: space-between;
 		margin-top: 1.5rem;
@@ -325,8 +339,39 @@ h4:nth-child(3) {
 		font-size: 1.5rem;
 	}
 
+
+	/* LANDING PAGE PARAGRAPHS */
+	section {
+		max-width: 30rem;
+		margin: auto;
+	}
+
+	#intro {
+		text-align: justify;
+	}
+
+	#intro > p {
+		line-height: 2.5rem;
+	}
+
+	#colophon {
+		margin-left: 3.5rem;
+	}
+
+
+	/* COLOPHON HEADER */
+	h4 {
+		font-size: 3rem;
+		color: var(--white);
+		padding: 1.5rem;
+		padding-left: 5rem;
+		margin-bottom: 2.5rem;
+	}
+
+
+	/* ARTICLE 1 BODY */
 	main > p {
-		max-width: 40rem;
+		max-width: 30rem;
 		margin: auto;
 		margin-bottom: 1.5rem;
 	}
