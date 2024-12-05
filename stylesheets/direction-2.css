@@ -37,8 +37,11 @@ details[open] > summary {
 }
 
 aside > details[open] {
-	background-color: var(--transparent-blue);
-	color: rgb(213, 213, 213);
+	color: var(--white);
+}
+
+li {
+	border-bottom: solid 1px var(--blue);
 }
 
 
