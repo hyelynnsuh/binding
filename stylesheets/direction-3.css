@@ -3,7 +3,7 @@
 /* TITLE */
 h1 {
 	font-size: 1.5rem;
-	
+
 }
 
 
@@ -25,27 +25,42 @@ main {
 /* TABLET BREAKPOINT */
 @media (min-width: 800px) {
 	/* ARTICLE TITLE */
-	h1{
-		font-size: 3.7rem;
-		line-height: 5rem;
-	}
-
 	.h1-container {
 		margin-right: 1rem;
-		flex: 0 0 auto;
-		width: 60%;
 		min-width: 32rem;
-		height: 15rem;
+		height: 20rem;
+		display: grid;
+		grid-template-areas: 
+		"article-number"
+		"h1";
+		max-width: 30rem;
 	}
 	
 	.parent-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
 		max-width: 80rem;
 		margin: auto;
 		margin-bottom: 3rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
 	}
 
 	.article-number {
-		font-size: 10rem;
+		font-size: 6rem;
+		padding-left: 1.5rem;
+		border-bottom: 0;
+		grid-area: article-number;
+		overflow: hidden;
+		text-align: right;
+		padding-top: 0.5rem;
+	}
+
+	h1{
+		font-size: 3rem;
+		line-height: 5rem;
+		grid-area: h1;
+		border-top: solid var(--blue) 1px;
 		padding: 1.5rem;
 	}
 
@@ -55,16 +70,23 @@ main {
 		padding: 1rem;
 	}
 
+	.author > p {
+		height: 10.9rem;
+		padding-top: 3rem;
+	}
+
 	address:nth-child(2) {
 		width: 16rem;
 		margin: 0;
+		height: 6rem;
+		padding-top: 1.5rem;
 	}
 
 	.address-container {
 		display: flex;
 		flex-direction: column;
-		gap: 3.5rem;
-		width: 30%;
+		gap: 1rem;
+		width: 100%;
 		justify-content: space-between;
 		margin-top: 1.5rem;
 		align-items: center;
@@ -86,60 +108,83 @@ main {
 /* DESKTOP BREAKPOINT */
 @media (min-width: 1280px) {
 
-	/*TITLES*/
-	.parent-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		max-width: 80rem;
-		margin-top: 2rem;
-		margin-bottom: 3rem;
+	/* ARTICLE TITLE */
+	.h1-container {
+		margin-right: 1rem;
+		height: 30rem;
+		display: grid;
+		grid-template-areas: 
+		"article-number"
+		"h1";
+		max-width: 50rem;
+		margin: auto;
+		width: 100%;
 	}
 	
-	h1{
-		font-size: 6rem;
-		line-height: 10rem;
+	.parent-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		max-width: 80rem;
+		margin: auto;
+		margin-bottom: 3rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		margin-top: 3rem;
+		gap: 2rem;
 	}
 
 	.article-number {
-		font-size: 10rem;
-		padding-top: 6rem;
-		padding-bottom: 6rem;
-		padding-right: 3rem;
-		padding-left: 3rem;
+		font-size: 6rem;
+		padding-left: 1.5rem;
+		border-bottom: 0;
+		grid-area: article-number;
+		overflow: hidden;
+		text-align: right;
+		padding-top: 0.5rem;
 	}
 
-	.h1-container {
-		flex: 0 0 auto;
-		width: 60%;
-		height: 24rem;
+	h1{
+		font-size: 7rem;
+		line-height: 9rem;
+		grid-area: h1;
+		border-top: solid var(--blue) 1px;
+		padding: 1.5rem;
 	}
 
 	address {
-		max-width: 20rem;
+		max-width: 100%;
 		margin: 0;
+		padding: 1rem;
 		font-size: 2rem;
-		padding: 2.5rem;
+		line-height: 3rem;
+		width: 100%;
+	}
+
+	.author > p {
+		height: 19.8rem;
+		padding-top: 6.5rem;
+		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 
 	address:nth-child(2) {
-		width: 21rem;
-		
+		max-width: 100%;
+		margin: 0;
+		height: 6rem;
+		padding-top: 1.5rem;
+		width: 100%;
 	}
 
 	.address-container {
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		width: 30%;
+		width: 100%;
 		justify-content: space-between;
-		margin-top: 1.5rem;
+		margin-top: 0;
 		align-items: center;
 	}
 
-	.top-right, .bottom-right {
-		flex: 1;
-	}
 
 	/* BODY TEXT */
 	main {

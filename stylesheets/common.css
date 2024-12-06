@@ -246,6 +246,7 @@ h1, h2 {
 	padding: 0.5rem;
 	font-size: 7rem;
 	align-items: start;
+	border-bottom: solid var(--blue) 1px;
 }
 
 address {

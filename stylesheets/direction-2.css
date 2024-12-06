@@ -109,6 +109,7 @@ footer {
 	.article-number {
 		font-size: 8rem;
 		padding: 1.5rem;
+		padding-top: 3rem;
 	}
 
 	address {
@@ -126,7 +127,7 @@ footer {
 	.address-container {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 1.8rem;
 		width: 100%;
 		justify-content: space-between;
 		margin-top: 1.5rem;
