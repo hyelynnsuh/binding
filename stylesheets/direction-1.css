@@ -52,7 +52,7 @@ h1 {
 	transition: 500ms;
 }
 
-:where(.first, .second, .third) {
+/* :where(.first, .second, .third) {
 	background: var(--white);
 	transition: 300ms;
 }
@@ -73,13 +73,6 @@ h1 {
 	grid-template-columns: 0.5fr 0.5fr 2fr;
 }
 
-.hover-text {
-	display: none;
-	font-size: 0.9rem;
-	margin-top: 1.5rem;
-	color: var(--white);
-}
-
 :where(.first, .second, .third):hover {
 	background: var(--blue);
 	color: var(--white);
@@ -87,6 +80,13 @@ h1 {
 
 :where(.first:hover, .second:hover, .third:hover) .hover-text {
 	display: block;
+} */
+
+.hover-text {
+	display: none;
+	font-size: 0.9rem;
+	margin-top: 1.5rem;
+	color: var(--white);
 }
 
 .first, .second, .third {
