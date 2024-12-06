@@ -75,14 +75,10 @@ main {
 
 	/* MAIN */
 	main {
-		max-width: 40rem;
+		max-width: 30rem;
 		margin: auto;
 	}
 
-	/* BLOCKQUOTE */
-	blockquote > q {
-		font-size: 1.8rem;
-	}
 }
 
 
