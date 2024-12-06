@@ -1,72 +1,4 @@
 
-
-/* SPINNING CUBE ANIMATION */
-/* .cube-container {
-	position: relative;
-	width: 8rem;
-	height: 8rem;
-	perspective: 80rem;
-	margin: auto;
-}
-
-.cube {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-	animation: rotateCube 10s infinite linear;
-}
-
-.face {
-	position: absolute;
-	width: 8rem;
-	height: 8rem;
-	background: 
-		linear-gradient(to right, var(--blue) 1px, transparent 1px),
-		linear-gradient(to bottom, var(--blue) 1px, transparent 1px);
-	background-size: 0.8rem 0.8rem;
-	background-color: var(--white);
-	border: 1px solid var(--blue);
-}
-
-.front {
-	transform: translateZ(4rem);
-}
-
-.back {
-	transform: rotateY(180deg) translateZ(4rem);
-}
-
-.left {
-	transform: rotateY(-90deg) translateZ(4rem);
-}
-
-.right {
-	transform: rotateY(90deg) translateZ(4rem);
-}
-
-.top {
-	transform: rotateX(90deg) translateZ(4rem);
-}
-
-.bottom {
-	transform: rotateX(-90deg) translateZ(4rem);
-}
-
-@keyframes rotateCube {
-	0% {
-		transform: rotateX(0deg) rotateY(0deg);
-	}
-	100% {
-		transform: rotateX(360deg) rotateY(360deg);
-	}
-}
-
-.cube-container:hover .cube {
-	animation-play-state: paused;
-} */
-
-
 /* LANDING PAGE HEADER */
 h3 {
 	font-weight: 400;
@@ -165,7 +97,7 @@ a {
 }
 
 
-/* LANDING PAGE P */
+/* LANDING PAGE INTRO */
 p {
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
@@ -342,11 +274,85 @@ h5 {
 	}
 
 	#intro {
-		text-align: justify;
+		text-align: justify; 
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 3rem;
+		max-width: 40rem;
+		margin-bottom: 3rem;
+		margin-top: 1rem;
+	}
+	
+	/* SPINNING CUBE ANIMATION */
+	.cube-container {
+		position: relative;
+		width: 8rem;
+		height: 8rem;
+		perspective: 80rem;
+		margin: auto;
+	}
+
+	.cube {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		animation: rotateCube 10s infinite linear;
+	}
+
+	.face {
+		position: absolute;
+		width: 8rem;
+		height: 8rem;
+		background: 
+			linear-gradient(to right, var(--blue) 1px, transparent 1px),
+			linear-gradient(to bottom, var(--blue) 1px, transparent 1px);
+		background-size: 0.8rem 0.8rem;
+		background-color: var(--white);
+		border: 1px solid var(--blue);
+	}
+
+	.side-1 {
+		transform: translateZ(4rem);
+	}
+
+	.side-2 {
+		transform: rotateY(180deg) translateZ(4rem);
+	}
+
+	.side-3 {
+		transform: rotateY(-90deg) translateZ(4rem);
+	}
+
+	.side-4 {
+		transform: rotateY(90deg) translateZ(4rem);
+	}
+
+	.side-5 {
+		transform: rotateX(90deg) translateZ(4rem);
+	}
+
+	.side-6 {
+		transform: rotateX(-90deg) translateZ(4rem);
+	}
+
+	@keyframes rotateCube {
+		0% {
+			transform: rotateX(0deg) rotateY(0deg);
+		}
+		100% {
+			transform: rotateX(360deg) rotateY(360deg);
+		}
+	}
+
+	.cube-container:hover .cube {
+		animation-play-state: paused;
 	}
 
 	#intro > p {
 		line-height: 2.5rem;
+		border: solid var(--blue) 1px;
+		padding: 2rem;
 	}
 
 	#colophon {
