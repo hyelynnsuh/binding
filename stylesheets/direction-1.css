@@ -29,11 +29,14 @@ h3 {
 /* ARTICLE TITLE */
 h1 {
 	font-size: 1.5rem;
-	border-left: solid var(--blue) 1px;
 }
 
 .h1-container {
 	grid-template-columns: 1fr 2fr;
+}
+
+.article-number {
+	border-right: solid var(--blue) 1px;
 }
 
 /* LANDING PAGE ARTICLE CONTAINER */
@@ -271,8 +274,9 @@ h5 {
 
 	/* LANDING PAGE PARAGRAPHS */
 	section {
-		max-width: 30rem;
+		max-width: 35rem;
 		margin: auto;
+		margin-bottom: 3rem;
 	}
 
 	#intro {
@@ -363,13 +367,25 @@ h5 {
 		margin-left: 3.5rem;
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		max-width: 40rem;
+		max-width: 47rem;
 		gap: 2rem;
+		margin-bottom: 2rem;
+		margin: auto;
+		grid-template-areas: 
+		"p div";
+	}
+
+	.colophon-content {
+		grid-area: p;
 		margin-bottom: 2rem;
 	}
 
-	.cube-container:nth-child(2) {
+	#colophon > .cube-container {
+		grid-area: div;
 		position: sticky;
+		vertical-align: top;
+		margin: 2rem;
+		top: 15rem;
 	}
 
 
@@ -393,6 +409,7 @@ h5 {
 	h5 {
 		top: 8rem;
 		font-size: 2rem;
+		margin-bottom: 2.8rem;
 	}
 
 
@@ -454,6 +471,14 @@ h5 {
 		font-size: 1.5rem;
 	}
 
+	#colophon {
+		max-width: 60rem;
+		margin: auto;
+	}
+
+	h4 {
+		font-size: 3rem;
+	}
 
 	
 	/* BODY TEXT */

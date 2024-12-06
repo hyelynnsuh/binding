@@ -297,13 +297,11 @@ blockquote {
 	margin-bottom: calc(var(--pad-marg-spacing) + 0.3rem);
 	/* border-radius: 1.5rem; */
 	border: solid var(--blue) 0.1rem;
-	margin-left: var(--pad-marg-spacing);
-	margin-right: var(--pad-marg-spacing);
 }
 
 blockquote > q, cite, time {
 	/* color: var(--white); */
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-weight: 300;
 }
 
@@ -318,6 +316,8 @@ footer {
 footer > p {
 	color: var(--white);
 	text-align: center;
+	font-size: 1.5rem;
+	padding: 1.5rem;
 }
 
 
@@ -492,7 +492,7 @@ footer > p {
 	blockquote {
 		padding: 1.5rem;
 		border: solid rgb(0, 18, 158) 0.1rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 	}
 
 	blockquote > q, cite, time {
