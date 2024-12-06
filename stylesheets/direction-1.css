@@ -130,7 +130,7 @@ h5 {
 	margin: auto;
 	margin-bottom: var(--pad-marg-spacing);
 	z-index: 0;
-	border: solid var(--white) 1px;
+	border: solid var(--blue) 1px;
 }
 
 
@@ -351,22 +351,34 @@ h5 {
 
 	#intro > p {
 		line-height: 2.5rem;
-		border: solid var(--blue) 1px;
+		border: solid var(--blue) 1.5px;
 		padding: 2rem;
+		margin-right: 0;
+		margin-bottom: 0;
 	}
 
 	#colophon {
 		margin-left: 3.5rem;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		max-width: 40rem;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.cube-container:nth-child(2) {
+		position: sticky;
 	}
 
 
 	/* COLOPHON HEADER */
 	h4 {
 		font-size: 3rem;
-		color: var(--white);
+		color: var(--blue);
 		padding: 1.5rem;
 		padding-left: 5rem;
 		margin-bottom: 2.5rem;
+		border: solid var(--blue) 1px;
 	}
 
 
@@ -382,8 +394,6 @@ h5 {
 		top: 8rem;
 		font-size: 2rem;
 	}
-
-
 
 
 	/* BLOCKQUOTE */
@@ -416,7 +426,7 @@ h5 {
 
 	/* LANDING PAGE ARTICLES */
 	#grid {
-		gap: 5rem;
+		gap: 3rem;
 		max-width: 60rem;
 	}
 
@@ -424,10 +434,26 @@ h5 {
 		padding: 1.5rem;
 	}
 
+	.article-item {
+		height: 10rem;
+	}
+
 	h4 {
 		text-align: center;
 		font-size: 1.5rem;
 	}
+
+	/* LANDING PAGE INTRO */
+	#intro {
+		max-width: 60rem;
+		margin-top: 3.5rem;
+		margin-bottom: 5rem;
+	}
+
+	#intro > p {
+		font-size: 1.5rem;
+	}
+
 
 	
 	/* BODY TEXT */
