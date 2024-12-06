@@ -40,7 +40,7 @@ main {
 	.parent-container {
 		max-width: 80rem;
 		margin: auto;
-		margin-bottom: 1.8rem;
+		margin-bottom: 3rem;
 	}
 
 	.article-number {
@@ -62,7 +62,7 @@ main {
 	.address-container {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 3.5rem;
 		width: 30%;
 		justify-content: space-between;
 		margin-top: 1.5rem;

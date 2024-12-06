@@ -12,11 +12,11 @@ details {
 	font-size: 1.3rem;
 	line-height: 2.1rem;
 	text-align: left;
-	min-width: 20rem;
 	margin: auto;
 	margin-bottom: 1.5rem;
 	background-color: var(--white);
 	border: solid var(--blue) 1.5px;
+	max-width: 20rem;
 	/* border-radius: 1rem; */
 }
 
@@ -51,8 +51,7 @@ h3 {
 	padding: 1rem;
 	line-height: 2.1rem;
 	margin: auto;
-	background-color: var(--blue);
-	color: var(--white);
+	color: var(--blue);
 	margin-bottom: 1.5rem;
 	text-align: center;
 	max-width: 20rem;
@@ -125,37 +124,37 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: auto;
+		gap: 1rem;
 		/* min-height: 100vh; */
 	}
 	
 	main > p, blockquote, section {
-		line-height: 2.5rem;
+		line-height: var(--spacing);
 		grid-column: 2;
 		margin: auto;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-		max-width: 45rem;
+		max-width: 28rem;
 	}
 
 
 	/* TABLE OF CONTENTS */
-
 	aside {
 		/* grid-column: 1; */
-		margin-left: 2rem;
 		position: sticky;
 		top: 10rem;
-		
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	details {
 		position: sticky;
 		top: 3rem;
 		max-height: 90vh;
-		max-width: 19rem;
 		overflow-y: auto;
 		overflow: visible;
 		z-index: 10;
+		margin-left: var(--spacing);
+		/* margin-right: var(--spacing); */
+		max-width: 25rem;
 	}
 
 	summary {
@@ -166,10 +165,12 @@ footer {
 		line-height: 3rem;
 	}
 
+
 	/* BLOCKQUOTE */
 	blockquote {
 		margin-bottom: 1.5rem;
 	}
+
 
 	/* SECTION HEADER */
 	.header-name {
@@ -178,9 +179,18 @@ footer {
 		min-width: 22rem;
 	}
 
-	section > p {
-		line-height: 2.5rem;
+	h3 {
+		max-width: 30rem;
 	}
+
+	section > p {
+		line-height: var(--spacing);
+	}
+
+	section {
+		margin-bottom: 1rem;
+	}
+	
 
 	/* FOOTER */
 	footer {
@@ -240,7 +250,7 @@ footer {
 	.address-container {
 		display: flex;
 		flex-direction: column;
-		gap: 3.1rem;
+		gap: 4.9rem;
 		width: 30%;
 		justify-content: space-between;
 		margin-top: 1.5rem;
@@ -250,6 +260,24 @@ footer {
 	.top-right, .bottom-right {
 		flex: 1;
 	}
+
+
+	.content-grid {
+		grid-template-columns: 1fr 1.5fr;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* TOC */
+	details {
+		width: 28rem;
+		margin-left: 2rem;
+	}
+	
+	summary {
+		font-size: 1.8rem;
+	}
+
 
 	/* BODY TEXT */
 	main {
@@ -261,11 +289,17 @@ footer {
 	main > p {
 		line-height: 2.5rem;
 		padding-bottom: 1.5rem;
+
 	}
 
 	main > p, blockquote, section {
-		max-width: 45rem;
+		max-width: 35rem;
 		margin: auto;
+	}
+
+	h3 {
+		max-width: 35rem;
+		margin-bottom: 2rem;
 	}
 
 	/* BLOCKQUOTE */

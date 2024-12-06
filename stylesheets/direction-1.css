@@ -365,7 +365,10 @@ h5 {
 	/* ARTICLE 1 SECTION TITLES */
 	h5 {
 		top: 8rem;
+		font-size: 2rem;
 	}
+
+
 
 
 	/* BLOCKQUOTE */
@@ -494,26 +497,25 @@ h5 {
 
 	.section-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
 		grid-template-areas: 
 		"sec-1 content-1"
 		"sec-2 content-2"
 		"sec-3 content-3";
 		justify-content: top;
+		margin-left: 3.4rem;
 	}
 
 	h5 {
-		max-height: 5rem;
+		max-height: 7rem;
 		margin: 0;
 		margin-bottom: 0;
 		max-width: 35rem;
-		margin-left: auto;
 	}
 
 	#content-1 {
 		grid-area: content-1;
 		position: sticky;
-		bottom: 50rem;
 	}
 
 	#sec-1 {
@@ -529,7 +531,16 @@ h5 {
 	#sec-2 {
 		align-self: start;
 		grid-area: sec-2;
-		font-size: calc(var(--root-size) - 0.05rem);
+	}
+
+
+	section > p {
+		line-height: 2rem;
+	}
+
+	section {
+		max-width: 40rem;
+		margin-bottom: 2rem;
 	}
 
 }
