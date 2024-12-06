@@ -112,9 +112,10 @@ section > p > span {
 /* COLOPHON HEADER */
 h4 {
 	font-size: 2rem;
-	color: var(--white);
+	color: var(--blue);
 	padding: 1.5rem;
 	margin-bottom: 1.5rem;
+	border: solid var(--blue) 1px;
 }
 
 
@@ -374,11 +375,9 @@ h5 {
 	/* COLOPHON HEADER */
 	h4 {
 		font-size: 3rem;
-		color: var(--blue);
 		padding: 1.5rem;
 		padding-left: 5rem;
 		margin-bottom: 2.5rem;
-		border: solid var(--blue) 1px;
 	}
 
 
