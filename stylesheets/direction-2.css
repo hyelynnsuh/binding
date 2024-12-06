@@ -305,18 +305,21 @@ footer {
 	main {
 		margin-left: 3rem;
 		margin: auto;
-		font-size: 1.5rem;
 	}
 
 	main > p {
 		line-height: 2.5rem;
 		padding-bottom: 1.5rem;
-
 	}
 
 	main > p, blockquote, section {
 		max-width: 35rem;
 		margin: auto;
+	}
+
+	section > p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
 	}
 
 	h3 {
