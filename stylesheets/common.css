@@ -223,7 +223,7 @@ h1 {
 	padding-left: var(--pad-marg-spacing);
 	padding-right: var(--pad-marg-spacing);
 	line-height: calc(var(--pad-marg-spacing) * 2);
-	border-left: solid var(--blue) 2px;
+	border-left: solid var(--blue) 1px;
 }
 
 .h1-container {
@@ -449,7 +449,7 @@ footer > p {
 		align-items: center;
 		margin-top: 1.5rem;
 		margin: auto;
-		margin-bottom: 1.5rem;
+		margin-bottom: 3rem;
 	}
 
 	.h1-container {

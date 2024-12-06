@@ -453,7 +453,7 @@ h5 {
 	
 	.parent-container {
 		max-width: 80rem;
-
+		margin-bottom: 3rem;
 	}
 
 	.article-number {
@@ -497,7 +497,8 @@ h5 {
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: 
 		"sec-1 content-1"
-		"content-2 sec-2";
+		"sec-2 content-2"
+		"sec-3 content-3";
 		justify-content: top;
 	}
 
@@ -506,16 +507,19 @@ h5 {
 		margin: 0;
 		margin-bottom: 0;
 		max-width: 35rem;
+		margin-left: auto;
 	}
 
 	#content-1 {
 		grid-area: content-1;
+		position: sticky;
+		bottom: 50rem;
 	}
 
 	#sec-1 {
 		align-self: start;
 		grid-area: sec-1;
-		margin-left: 3.3rem;
+
 	}
 
 	#content-2 {
@@ -525,7 +529,7 @@ h5 {
 	#sec-2 {
 		align-self: start;
 		grid-area: sec-2;
-
+		font-size: calc(var(--root-size) - 0.05rem);
 	}
 
 }
