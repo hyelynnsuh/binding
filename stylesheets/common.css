@@ -223,17 +223,13 @@ h1 {
 	padding-left: var(--pad-marg-spacing);
 	padding-right: var(--pad-marg-spacing);
 	line-height: calc(var(--pad-marg-spacing) * 2);
-	border-left: solid var(--blue) 1px;
 }
 
 .h1-container {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
 	gap: 0.1rem;
 	align-items: center;
-	grid-template-areas: 
-		"p h1"
-		"p h1";
+
 	border: solid var(--blue) 1px;
 	margin-top: var(--pad-marg-spacing);
 	margin-left: var(--pad-marg-spacing);
@@ -255,7 +251,7 @@ h1, h2 {
 address {
 	text-align: center;
 	margin-bottom: calc(var(--pad-marg-spacing) - 0.5rem);
-	border: solid var(--blue) 1.5px;
+	border: solid var(--blue) 1px;
 	/* border-radius: 1rem; */
 	padding: var(--pad-marg-spacing);
 	max-width: 20rem;
@@ -320,6 +316,7 @@ footer {
 
 footer > p {
 	color: var(--white);
+	text-align: center;
 }
 
 
@@ -351,7 +348,7 @@ footer > p {
 	background-image: 
 		linear-gradient(to right, var(--white) 1px, transparent 1px),
 		linear-gradient(to bottom, var(--white) 1px, transparent 1px);
-	background-size: 2.5rem 2.2rem;
+	background-size: 4.35rem 4.4rem;
 }
 
 
@@ -556,6 +553,7 @@ footer > p {
 	.bottom {
 		transform: translateY(1.5rem) rotateX(-90deg);
 	}
+
 
 	/* BODY TEXT */
 	main {

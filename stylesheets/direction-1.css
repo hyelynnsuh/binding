@@ -97,6 +97,11 @@ h3 {
 /* ARTICLE TITLE */
 h1 {
 	font-size: 1.5rem;
+	border-left: solid var(--blue) 1px;
+}
+
+.h1-container {
+	grid-template-columns: 1fr 2fr;
 }
 
 /* LANDING PAGE ARTICLE CONTAINER */
@@ -198,6 +203,7 @@ h5 {
 
 
 
+
 /* TABLET BREAKPOINT */
 @media (min-width: 800px) {
 	/* ARTICLE TITLE */
@@ -211,6 +217,9 @@ h5 {
 		flex: 0 0 auto;
 		width: 60%;
 		height: 18.5rem;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas: 
+		"p h1";
 	}
 	
 	.parent-container {
@@ -507,7 +516,7 @@ h5 {
 	}
 
 	h5 {
-		max-height: 7rem;
+		max-height: 9rem;
 		margin: 0;
 		margin-bottom: 0;
 		max-width: 35rem;
@@ -531,8 +540,13 @@ h5 {
 	#sec-2 {
 		align-self: start;
 		grid-area: sec-2;
+		max-height: 10rem;
 	}
 
+	#sec-3 {
+		max-height: 10rem;
+		padding-top: 3.5rem;
+	}
 
 	section > p {
 		line-height: 2rem;
